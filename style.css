@@ -37,7 +37,6 @@ body, html {
   .brand-text {
     font-size: 3.5rem;
     font-weight: 700;
-    background: linear-gradient(90deg, #9B5EFF, #D8BFFD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
