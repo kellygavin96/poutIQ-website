@@ -3,25 +3,68 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PoutIQ — Stop guessing the lip combo</title>
+    <title>PoutIQ — Stop guessing the lip combo, start recreating it!</title>
     <meta name="description" content="Upload a photo and let PoutIQ identify the exact lipstick, liner, and gloss — or perfect dupes.">
+    <meta name="keywords" content="lip combo, makeup, makeup dupes, ai app, app for makeup, makeup app, beauty app, beauty, lipstick">
 
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="POUT-IQ.png">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <!-- open graph / facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://poutiq.com/">
+    <meta property="og:title" content="PoutIQ — Stop guessing the lip combo, start recreating it!">
+    <meta property="og:description" content="Upload a photo and let PoutIQ identify the exact lipstick, liner, and gloss — or perfect dupes.">
+    <meta property="og:image" content="https://poutiq.com/POUT-IQ.png">
+    
+    <!-- twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://poutiq.com/">
+    <meta property="twitter:title" content="PoutIQ — Stop guessing the lip combo, start recreating it!">
+    <meta property="twitter:description" content="Upload a photo and let PoutIQ identify the exact lipstick, liner, and gloss — or perfect dupes.">
+    <meta property="twitter:image" content="https://poutiq.com/POUT-IQ.png">
+    
+    <!-- canonical url -->
+    <link rel="canonical" href="https://poutiq.com/">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="POUT-IQ.png">
   </head>
 
   <body>
+    <nav class="site-header">
+      <div class="header-container">
+          <a href="/" class="brand">
+              <img src="POUT-IQ.png" alt="poutiq icon" class="brand-icon">
+              <span class="brand-text">poutIQ</span>
+          </a>
+      </div>
+    </nav>
     <div class="hero">
       <div class="hero-content">
         <h1>Stop guessing the lip combo.<br>Start recreating it.</h1>
         <p>Upload a photo. Get the exact lipstick, liner, and gloss — or perfect dupes.</p>
-        <a href="#features" class="cta">Try PoutIQ</a>
+        <div class="pout-cta">
+          <a href="https://" class="app-store-badge">
+              <img src="assets/app-store-badge.png" alt="download on the app store">
+          </a>
+          <a href="" class="app-store-badge">
+              <img src="assets/google-play-badge.png" alt="join android waitlist">
+          </a>
+      </div>
       </div>
     </div>
 
+    <main class="phone-showcase">
+      <div class="iphone">
+          <div class="iphone-notch"></div>
+          <div class="iphone-screen">
+              <!-- App screenshot displayed directly -->
+              <img id="app-demo" src="assets/app-screenshot.png" alt="Brainrot App Screenshot">
+          </div>
+      </div>
+   </main>
     <section id="features">
       <div class="container">
         <div class="feature">
@@ -39,11 +82,24 @@
       </div>
     </section>
 
+    <section class="cta-section">
+      <h2>Ready to stop guessing the product? </h2>
+      <p>Join thousands finding their perfect lip combo!</p>
+      <div class="pout-cta">
+        <a href="https://" class="app-store-badge">
+            <img src="assets/app-store-badge.png" alt="download on the app store">
+        </a>
+        <a href="" class="app-store-badge">
+            <img src="assets/google-play-badge.png" alt="join android waitlist">
+        </a>
+    </div>
+    </section>
     <footer>
       <a href="contact.html">Contact</a> |
       <a href="privacy.html">Privacy</a> |
       <a href="terms.html">Terms</a> |
       <a href="faq.html">FAQ</a>
+      <p class="copyright">&copy; 2025 poutiq. All rights reserved.</p>
     </footer>
   </body>
 </html>
