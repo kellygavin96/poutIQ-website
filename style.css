@@ -3,17 +3,54 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    scroll-behavior: smooth;
+    background: linear-gradient(135deg, #D8BFFD, #E6C9FF); /* lilac gradient */
+    min-height: 100vh;
   }
-  
+  body > *:not(.site-header) {
+    padding-top: 70px; /* adjust based on header height */
+  }
+  .site-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* logo on left */
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: transparent; /* shows lilac gradient */
+    position: fixed; /* optional: fixed header */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+  }  
+
+/* Logo / brand */
+  .brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .brand-icon {
+    height: 40px; /* smaller logo */
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .brand-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff; /* lilac-friendly */
+  }
   /* Hero */
   .hero {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
-    color: white;
     padding: 1rem 1rem 5rem;
   }
   
@@ -388,7 +425,15 @@ body, html {
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {    
+    .brand-icon {
+        height: 32px;
+    }
+    
+    .brand-text {
+        font-size: 1rem;
+    }
+    
     .container {
         padding: 0 10px;
     }
@@ -396,17 +441,7 @@ body, html {
     .header-container {
         padding: 0 10px;
     }
-    
-    .brand-icon {
-        width: 24px;
-        height: 24px;
-    }
-    
-    .brand-text {
-        font-size: 1.1rem;
-    }
-    
-    
+
     .hero {
         padding: 1rem 0;
     }
@@ -445,6 +480,15 @@ body, html {
         height: 35px;
     }
   }
+
+  @media (max-width: 480px) {
+    .brand-icon {
+        height: 28px;
+    }
+    .brand-text {
+        font-size: 0.9rem;
+    }
+ }
 
 /* Animation for subtle hover effects */
   @keyframes gentle-float {
