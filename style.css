@@ -10,40 +10,36 @@ body, html {
     padding-top: 70px; /* adjust based on header height */
   }
   .site-header {
-    width: 100%;
     display: flex;
-    justify-content: flex-start; /* logo on left */
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    background: transparent; /* shows lilac gradient */
-    position: fixed; /* optional: fixed header */
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    padding: 2rem 0 1rem;
+    text-align: center;
+    background: transparent; /* keep lilac gradient visible */
   }
   .header-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-  }  
-
+  }
 /* Logo / brand */
   .brand {
     display: flex;
     align-items: center;
-    text-decoration: none;
+    gap: 1rem;
   }
-
   .brand-icon {
-    height: 40px; /* smaller logo */
-    width: auto;
-    margin-right: 10px;
+    width: 70px;   /* slightly bigger logo */
+    height: auto;
+    object-fit: contain;
   }
 
   .brand-text {
-    font-size: 1.2rem;
+    font-size: 3.5rem;
     font-weight: 700;
-    color: #fff; /* lilac-friendly */
+    background: linear-gradient(90deg, #9B5EFF, #D8BFFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   /* Hero */
   .hero {
